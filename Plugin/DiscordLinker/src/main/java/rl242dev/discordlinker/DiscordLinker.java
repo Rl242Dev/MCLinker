@@ -2,6 +2,8 @@ package rl242dev.discordlinker;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import rl242dev.discordlinker.handler.ChatListener;
+
 public final class DiscordLinker extends JavaPlugin {
 
     public static DiscordLinker instance;
@@ -11,6 +13,8 @@ public final class DiscordLinker extends JavaPlugin {
         saveConfig();
 
         instance = this;
+
+        getServer().getPluginManager().registerEvents(new ChatListener(), this);
     }
 
     @Override
