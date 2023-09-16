@@ -1,0 +1,8 @@
+Compiler le plugin et le mettre sur votre serveur 
+Config le plugin et créer la config si elle n'a pas été créer 
+
+config.yml:
+
+BASE_POST_URL: ""
+
+Lancer le script de l'API en ayant config le bot et le channel dans le code
